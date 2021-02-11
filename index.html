@@ -1,14 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Component Library</title>
+
+    <link rel="stylesheet" href="styles.css">
+
 </head>
+</head>
+
 <body>
-    <h1>Akila's component Library </h1>
-    <p>A library which would make all my projects look good and consistent.</p>
+    <header>
+        <h1>Akila's component Library </h1>
+    </header>
+    <small>February 11, 2021</small>
+    <p>This library is created by me to better design each element.</p>
+
+    <p>After creating this library, I am going to use the components in my <strong>portfolio, blog and all
+            projects</strong> created. This would ensure that all my projects have <strong>consistent themeing and
+            styling</strong>.</p>
 
     <hr>
 
@@ -22,36 +35,37 @@
 
     <h2>@containers</h2>
     <h3>fluid container</h3>
-    <div>This is a fluid container and will go till the end of the page.</div>
+    <div class="container">This is a fluid container and will go till the end of the page.</div>
 
     <h3>center container</h3>
-    <div>This is a center container. It will go till the specified width and center content.</div>
+    <div class="container container-center">This is a center container. It will go till the specified width and center
+        content.</div>
 
     <hr>
 
     <h2>@links</h2>
-    <a href="/">Primary Link</a>
-    <a href="/">Secondary Link</a>
+    <a class="link link-primary" href="/">Primary Link</a>
+    <a class="link link-secondary" href="/">Secondary Link</a>
 
     <hr>
 
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <ul>
+    <ul class="list non-bullet">
         <li>Item One</li>
         <li>Item Two</li>
         <li>Item Three</li>
     </ul>
 
     <h3>unordered inline list</h3>
-    <ul>
-        <li>Inline Item One</li>
-        <li>Inline Item Two</li>
-        <li>Inline Item Three</li>
+    <ul class="list non-bullet">
+        <li class="inline">Item One</li>
+        <li class="inline">Item Two</li>
+        <li class="inline">Item Three</li>
     </ul>
 
     <h3>reverse ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>peanut butter</li>
         <li>bread</li>
@@ -60,52 +74,60 @@
     <hr>
 
     <h3>@nav</h3>
-    <nav>
+    <p>Navigation is used on the top of the page and used to get to different pages</p>
+    <nav class="navigation container">
         <div>
-            <li>
-                <a href="/">home</a>
-            </li>
-            <li>
-                <a href="/">projects</a>
-            </li>
-            <li>
-                <a href="/">about</a>
-            </li>
+            <p id="brandName"><strong>theBrandName</strong></p>
+            <ul>
+                <li class="inline">
+                    <a class="link" href="/">home</a>
+                </li>
+                <li class="inline">
+                    <a class="link" href="/">projects</a>
+                </li>
+                <li class="inline">
+                    <a class="link" href="/">about</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <hr>
 
     <h3>@header</h3>
-    <header>
+    <header class="heroine">
         <img src="images/heroine.svg">
-        <h1>heading inside header</h1>
+        <h1>Akila Ravishankar <br><span>web developer</span></h1>
     </header>
 
     <hr>
 
     <h2>@section</h2>
-    <section>
+    <p>A section is used to separate parts of pages. In marketing websites you would have seen a header followed by sections of features, team, pricing, contact info etc.</p>
+    <section class="bgc">
         <h3>white section</h3>
+        <h2 class="bgc-white">heading inside whitesection</h2>
         <p>This will have white background.</p>
     </section>
-    <section>
+    <section class="bgc">
         <h3>off white section</h3>
+        <h2 class="bgc-off-white">heading inside off-white section</h2>
         <p>This will have grey background.</p>
     </section>
 
     <hr>
 
     <h2>@footer</h2>
-    <footer>
-        <div>Some small headings inside footer</div>
+    <footer class="footer">
+        <div class="footer-header">header inside footer</div>
         <ul>
-            <li>socialOne</li>
-            <li>socialTwo</li>
-            <li>socialThree</li>
+            <li class="inline">socialOne</li>
+            <li class="inline">socialTwo</li>
+            <li class="inline">socialThree</li>
         </ul>
     </footer>
 
     <!-- <div style="height: 30vh"></div> -->
 </body>
+
 </html>

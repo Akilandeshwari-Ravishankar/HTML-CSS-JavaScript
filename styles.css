@@ -1,0 +1,124 @@
+/** CSS for Akila's Component Library **/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #2563EB;
+    --off-white-color: #E5E7EB;
+    --gray-color: #6B7280;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header h1 {
+    margin-bottom: 0rem;
+}
+
+hr {
+    margin: 2rem 0rem;
+}
+
+a:hover {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.container {
+    padding: 0rem 1rem;
+}
+
+.container-center {
+    max-width: 600px;
+    margin: auto;
+}
+
+.link {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.link-primary  {
+    border-radius: 0.5rem;
+    background-color: var(--primary-color);
+}
+
+.link-secondary {
+    border-radius: 0.5rem;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color)
+}
+
+.non-bullet {
+    list-style: none;
+}
+
+.inline {
+    display: inline;
+    padding: 0rem 0.5rem 0rem 0rem;
+}
+
+.navigation {
+    background-color: var(--primary-color);
+    padding: 0.2rem 1rem 1rem 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+#brandName {
+    color: white;
+}
+
+.navigation ul {
+    text-align: right;
+}
+
+.heroine {
+    max-width: 350px;
+    margin: auto;
+    color: var(--gray-color);
+    display: block;
+}
+
+.heroine img {
+    display: block;
+    margin: auto;
+    max-width: 350px;
+}
+
+.heroine h1 {
+    text-align: center;
+}
+
+.heroine span {
+    color: var(--primary-color);
+}
+
+.bgc-white {
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+    background-color: white;
+}
+
+.bgc-off-white {
+    padding: 2rem 0rem 0rem 0rem;
+    text-align: center;
+    background-color: var(--off-white-color);
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    background-color: var(--primary-color);
+    padding: 2rem 1rem;
+    border-top-right-radius: 1rem;
+}
+
+.footer ul {
+    padding-inline-start: 0px;
+}
+
+.footer-header {
+    font-weight: bold;
+}

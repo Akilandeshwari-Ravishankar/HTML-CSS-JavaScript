@@ -37,7 +37,6 @@ a:hover {
 .link {
     color: white;
     text-decoration: none;
-    padding: 0.5rem 1rem;
 }
 
 .link-active {
@@ -48,12 +47,19 @@ a:hover {
 .link-primary  {
     border-radius: 0.5rem;
     background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
 }
 
 .link-secondary {
     border-radius: 0.5rem;
     border: 1px solid var(--primary-color);
     color: var(--primary-color)
+    padding: 0.5rem 1rem;
+}
+
+.link-ordinary {
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
 .non-bullet {
@@ -96,6 +102,7 @@ a:hover {
 
 .heroine h1 {
     text-align: center;
+    margin-bottom: 2rem;
 }
 
 .heroine span {
@@ -103,23 +110,23 @@ a:hover {
 }
 
 .bgc-white {
-    padding: 2rem 0rem 0rem 0rem;
-    text-align: center;
+    margin-top: 1rem;
+    /* text-align: center; */
     background-color: white;
 }
 
 .bgc-off-white {
-    margin-top: 3rem;
-    text-align: center;
+    margin-top: 1rem;
+    /* text-align: center; */
     background-color: var(--off-white-color);
 }
 
 .footer {
-    text-align: center;
-    color: white;
+    color:  white;
     background-color: var(--primary-color);
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     border-top-right-radius: 1rem;
+    margin-top: 2rem;
 }
 
 .footer ul {
@@ -134,4 +141,15 @@ a:hover {
     display: block;
     max-width: 900px;
     margin: auto
+}
+
+.padding-content {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+}
+
+.img-small {
+    display: inline;
 }
